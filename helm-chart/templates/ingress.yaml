@@ -1,0 +1,26 @@
+{{- if .Values.ingress.enabled -}}
+{{- $fullName := include "helm-chart.fullname" . -}}
+{{- $svcPort := .Values.service.port -}}
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Values.appName }}
+  namespace: {{ .Values.namespace }}  
+  labels:
+    app : {{ .Values.appName }}
+    environment: {{ .Values.env }}
+spec:
+  rules:
+    {{- range .Values.ingress.hosts }}
+    - host: {{ .host | quote }}
+      http:
+        paths:
+          {{- range .paths }}
+          - path: {{ .path }}
+            pathType: {{ .pathType }}
+            backend:
+              serviceName: {{ $.Values.appName }}
+              servicePort: {{ $svcPort }}
+          {{- end }}
+    {{- end }}
+{{- end }}

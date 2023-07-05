@@ -1,0 +1,31 @@
+{
+    "appName":"sample-reacjts",
+    "version":"5.0.0",
+    "versionMgmt": {
+       "useCZ":false,
+       "fromSource":true,
+       "bumpVersion":false
+    },
+    "appBuild": {
+       "framework": "npm",
+       "devBuild": true,
+       "prodBuild": "",
+       "runTests": true,
+       "pushBinary": false,
+       "binaryRepository":"",
+       "buildCmd": ""
+    },
+    "deployment": {
+       "ciDeploy": false,
+       "environment": "prod",
+       "release": false,
+       "container": true,
+       "containerRegistry": "registry-demo.kaiburr.com",
+       "containerRepo": "sample",
+       "registryCredentialsId": "",
+       "useHelm": true,
+       "helmChartPath": "helm-chart",
+       "gitOps": true,
+       "gitOpsHost": ""
+    }
+ }

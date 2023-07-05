@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: kaiburr-tools
+
+resources:
+  - k8s-config.yml
+
+images:
+  - name: registry-demo.kaiburr.com/sample/reactjs
+    newTag: "1.0_17"
