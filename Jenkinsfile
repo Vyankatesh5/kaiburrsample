@@ -1,4 +1,3 @@
-@Library("jenkins-shared-library@kaiburr") _
 pipeline {
     agent any
     tools {
