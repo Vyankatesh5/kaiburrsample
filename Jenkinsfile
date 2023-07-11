@@ -1,11 +1,9 @@
-@Library("jenkins-shared-library@kaiburr") _
+@Library("react-shared-library@main") _
 pipeline {
     agent any
     tools {
         nodejs 'nodejs-16.12'
     }
-   
-
     stages {
         stage('Checkout') {
             steps {              
@@ -13,16 +11,10 @@ pipeline {
               echo "Checking out....."
               checkout scm
             }
-        }
-        
+        }  
         stage('Build App') {
             steps {
-                script{
-                    sh "pwd "
-                    def image = "kaibursamplerj:${BUILD_ID}"                     
-                    dockerImage = docker.build ( image, "-f Dockerfile .")
-
-                    }
+                AppBuild()
             }
         }
     }
