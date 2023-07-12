@@ -20,7 +20,7 @@
        "environment": "prod",
        "release": false,
        "container": true,
-       "containerRegistry": "https://registry.hub.docker.com/",
+       "containerRegistry": "https://registry.hub.docker.com",
        "containerRepo": "sample",
        "registryCredentialsId": "",
        "useHelm": true,
