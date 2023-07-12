@@ -1,10 +1,10 @@
 appName: sampleapp-reactjs
 namespace: kaiburr-tools
 image:
-  repository: registry-demo.kaiburr.com/sample/sample-reacjts
+  repository: registry.hub.docker.com/vnk50/sample-reacjts
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "5.0.0"
+  tag: "0.1.0"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
