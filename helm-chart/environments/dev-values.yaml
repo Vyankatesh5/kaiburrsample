@@ -3,7 +3,7 @@ replicaCount: 1
 env: dev
 
 ingress:
-  enabled: true
+  enabled: false
   className: ""
   hosts:
     - host: sample-reactjs.kaiburr.com
