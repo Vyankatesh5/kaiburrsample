@@ -1,0 +1,19 @@
+replicaCount: 2
+env: dev
+image:
+  repository: registry-demo.kaiburr.com/sample/sample-reacjts
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "20.0.0"
+# ingress:
+#   enabled: true
+#   className: ""
+#   hosts:
+#     - host: sample-reactjs.kaiburr.com
+#       paths:
+#         - path: /
+#           pathType: ImplementationSpecific
+#   tls: []
+#  - secretName: chart-example-tls
+#    hosts:
+#      - sample-reactjs.kaiburr.com
