@@ -11,9 +11,7 @@ image:
 #   className: ""
 #   hosts:
 #     - host: sample-reactjs.kaiburr.com
-
 #       paths:
-
 #         - path: /
 
 #           pathType: ImplementationSpecific
