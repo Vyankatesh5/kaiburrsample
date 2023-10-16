@@ -9,9 +9,7 @@ image:
 # ingress:
 #   enabled: true
 #   className: ""
-
 #   hosts:
-
 #     - host: sample-reactjs.kaiburr.com
 
 #       paths:
