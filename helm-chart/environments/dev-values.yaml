@@ -17,5 +17,4 @@ image:
 #   tls: []
 #  - secretName: chart-example-tls
 #    hosts:
-
 #      - sample-reactjs.kaiburr.com
