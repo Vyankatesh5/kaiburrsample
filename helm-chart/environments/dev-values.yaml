@@ -5,6 +5,9 @@ env: dev
 #  pullPolicy: IfNotPresent
 #  # Overrides the image tag whose default is the chart appVersion.
 
+image:
+  repository: registry.hub.docker.com/vnk50/sample-reacjts
+  tag: 0.2.0
 #  tag: "0.1.0"
 # ingress:
 #   enabled: true
