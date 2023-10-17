@@ -1,10 +1,10 @@
 appName: sampleappreactjs
 namespace: default
-# image:
-#   repository: registry-demo.kaiburr.com/sample/sample-reacjts
-#   pullPolicy: IfNotPresent
-#   # Overrides the image tag whose default is the chart appVersion.
-#   tag: "15.0.0"
+image:
+  repository: registry.hub.docker.com/vnk50/sample-reacjts
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "0.1.0"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
